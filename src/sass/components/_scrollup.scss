@@ -1,0 +1,16 @@
+.myBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  z-index: 99;
+  cursor: pointer;
+  background: transparent;
+  fill: $accent-color;
+  transition: transform  $transition;
+}
+
+.myBtn:hover,
+.myBtn:focus {
+    transform: scale(1.5);
+}
