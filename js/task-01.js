@@ -1,28 +1,38 @@
 // Number of categories: 3
-const itemEl = document.querySelectorAll('.item');
-console.log("Number of categories:", itemEl.length);
+
+const categoriesEl = document.querySelectorAll('.item');
+console.log("Number of categories:", categoriesEl.length);
+
 
 // Category: Animals
 // Elements: 4
 
-const nameFirstCategory = itemEl[0].querySelector('h2');
-console.log("Category:", nameFirstCategory.textContent);
-const quantityFirstEl = itemEl[0].querySelectorAll('li');
-console.log("Elements:", quantityFirstEl.length)
+// const firstNameCategory = categoriesEl[0].querySelector('h2');
+// console.log("Category:", firstNameCategory.textContent);
+// const firstQuantityEl = categoriesEl[0].querySelectorAll('li');
+// console.log("Elements:", firstQuantityEl.length);
 
+console.log("Category:", categoriesEl[0].firstElementChild.textContent)
+console.log("Elements:", categoriesEl[0].lastElementChild.querySelectorAll('li').length);
 
-// Category: Products
-// Elements: 3
+// // Category: Products
+// // Elements: 3
 
-const nameSecondCategory = itemEl[1].querySelector('h2');
-console.log("Category:", nameSecondCategory.textContent)
-const quantitySecondEl = itemEl[1].querySelectorAll('li');
-console.log("Elements:", quantitySecondEl.length)
+// const secondNameCategory = categoriesEl[1].querySelector('h2');
+// console.log("Category:", secondNameCategory.textContent)
+// const secondQuantityEl = categoriesEl[1].querySelectorAll('li');
+// console.log("Elements:", secondQuantityEl.length);
 
-// Category: Technologies
-// Elements: 5
+console.log("Category:", categoriesEl[1].firstElementChild.textContent)
+console.log("Elements:", categoriesEl[1].lastElementChild.querySelectorAll('li').length);
 
-const nameThirdCategoryFirst = itemEl[2].querySelector('h2');
-console.log("Category:", nameThirdCategoryFirst.textContent)
-const quantityThirdEl = itemEl[2].querySelectorAll('li');
-console.log("Elements:", quantityThirdEl.length)
+// // Category: Technologies
+// // Elements: 5
+
+// const thirdNameCategory = categoriesEl[2].querySelector('h2');
+// console.log("Category:", thirdNameCategory.textContent)
+// const thirdQuantityEl = categoriesEl[2].querySelectorAll('li');
+// console.log("Elements:", thirdQuantityEl.length);
+
+console.log("Category:", categoriesEl[2].firstElementChild.textContent)
+console.log("Elements:", categoriesEl[2].lastElementChild.querySelectorAll('li').length);
