@@ -13,15 +13,13 @@ const ingredients = [
 // Добавит элементу класс item.
 // После чего вставит все <li> за одну операцию в список ul.ingredients.
 
-const listLu = document.querySelector('ul[id="ingredients"]');
-
-const itemLi = document.createElement('li');
+const listLu = document.querySelector('[id="ingredients"]');
 
 ingredients.forEach((element, index, array) => {
   
   const itemLi = document.createElement('li');
   
-  itemLi.item = '';
+  itemLi.classList.add('item');
   itemLi.textContent = array[index];
   listLu.appendChild(itemLi);
   
