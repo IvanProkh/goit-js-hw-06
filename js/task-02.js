@@ -15,12 +15,12 @@ const ingredients = [
 
 const listLu = document.querySelector('[id="ingredients"]');
 
-ingredients.forEach((element, index, array) => {
+ingredients.forEach(element => {
   
   const itemLi = document.createElement('li');
   
   itemLi.classList.add('item');
-  itemLi.textContent = array[index];
+  itemLi.textContent = element;
   listLu.appendChild(itemLi);
   
   return listLu;
