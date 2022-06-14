@@ -13,7 +13,7 @@ const ingredients = [
 // Добавит элементу класс item.
 // После чего вставит все <li> за одну операцию в список ul.ingredients.
 
-const listLu = document.querySelector('[id="ingredients"]');
+const listLu = document.querySelector('ul#ingredients');
 
 ingredients.forEach(element => {
   
