@@ -10,22 +10,22 @@ const incrementBtn = document.querySelector('[data-action="increment"]');
 const value = document.querySelector('[id="value"]');
 const decrementBtn = document.querySelector('[data-action="decrement"]');
 
-let counterValue = Number('0');
-counterValue = value.textContent;
+let counterValue = 0;
 
 console.log("~ counterValue", counterValue)
 
 incrementBtn.addEventListener('click', () => {
-    console.log("~ counterValue", counterValue)
-    // counterValue = value.textContent;
-    return counterValue += 1;
+
+    console.log("counterValue", counterValue)
+    counterValue += 1;
+    value.textContent = counterValue;
 });
 
 decrementBtn.addEventListener('click', () => {
     
-    console.log("~ counterValue", counterValue)
-    // counterValue = value.textContent;
-    return counterValue -= 1;
+    console.log("counterValue", counterValue)
+    counterValue -= 1;
+    value.textContent = counterValue;
 });
 
 
