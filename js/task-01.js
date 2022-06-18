@@ -1,4 +1,3 @@
-// Number of categories: 3
 
 const categoriesEl = document.querySelectorAll('.item');
 
